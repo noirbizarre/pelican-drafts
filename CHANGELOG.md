@@ -1,6 +1,6 @@
 # Changelog
 
-## In development
+## 0.1.1 (2020-03-26)
 
 - Fix the `SHOW_DRAFTS` parameter being ignored
 
