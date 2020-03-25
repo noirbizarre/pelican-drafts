@@ -59,6 +59,7 @@ setup(
     version=__version__,  # noqa
     description=__description__,  # noqa
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/noirbizarre/pelican-drafts',
     author='Axel Haustant',
     author_email='noirbizarre+github@gmail.com',
