@@ -10,6 +10,8 @@ def inject_settings(pelican):
 
 def generate_drafts_page(generator, writer):
     '''Generate the drafts page'''
+    if not generator.settings['SHOW_DRAFTS']:
+        return
     filename = generator.settings['DRAFTS_SAVE_AS']
     template = generator.get_template('drafts')
     writer.write_file(filename, template, generator.context, is_drafts=True)

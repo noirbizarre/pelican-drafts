@@ -29,4 +29,16 @@ PLUGINS = [
 
 ## Settings
 
+### `SHOW_DRAFTS`
+
+Wether or not to show the drafts page (**default**:  `True`, set it to `False` in your `publishconf.py`)
+
+### `DRAFTS_URL`
+
+URL on which you can consult the drafts page (**default**: `'drafts/'`)
+
+### DRAFTS_SAVE_AS
+
+Path to save the drafts page. It should be consistent with the `DRAFTS_URL` setting (**default**: `'drafts/index.html'`)
+
 ## Theming

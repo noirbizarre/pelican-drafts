@@ -2,8 +2,8 @@
 
 ## In development
 
-- Nothing yet
+- Fix the `SHOW_DRAFTS` parameter being ignored
 
 ## 0.1.0 (2020-03-26)
 
-- Nothing yet
+- Nothing Initial release
