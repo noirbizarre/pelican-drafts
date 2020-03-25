@@ -1,5 +1,5 @@
 # Changelog
 
-## In development
+## 0.1.0 (2020-03-26)
 
 - Nothing yet

@@ -1,6 +1,6 @@
 # Pelican Drafts
 
-[![Build Status](https://travis-ci.com/noirbizarre/pelican-drafts.svg?branch=master)](https://travis-ci.com/noirbizarre/pelican-drafts)
+[![Build Status](https://travis-ci.com/noirbizarre/pelican-drafts.svg?tag=0.1.0)](https://travis-ci.com/noirbizarre/pelican-drafts)
 
 Add a browsable drafts listing fr your Pelican website
 
