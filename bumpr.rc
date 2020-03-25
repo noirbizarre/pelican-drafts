@@ -1,0 +1,31 @@
+[bumpr]
+file = drafts/__about__.py
+vcs = git
+commit = true
+tag = true
+push = true
+tests = tox
+publish =
+    python setup.py sdist bdist_wheel
+    twine upload dist/*
+clean =
+    rm -fr build dist
+files =
+    README.md
+
+[bump]
+unsuffix = true
+
+[prepare]
+part = patch
+suffix = dev
+
+[changelog]
+file = CHANGELOG.md
+bump = ## {version} ({date:%Y-%m-%d})
+prepare = ## In development
+separator =
+
+[replace]
+dev = ?branch=master
+stable = ?tag={version}

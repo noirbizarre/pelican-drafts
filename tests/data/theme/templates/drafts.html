@@ -1,0 +1,47 @@
+{% extends "!simple/base.html" %}
+
+{% block title %} &ndash; Drafts{% endblock %}
+
+{% block content %}
+<header>
+<h1>Drafts</h1>
+</header>
+<section>
+    <h2>Articles</h2>
+    {% for article in drafts|sort(attribute='date', reverse=True) %}
+    <article>
+        <header>
+            <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+        </header>
+        <main>
+            {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
+            {{ article.summary }}
+            <br>
+            <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue reading</a>
+            {% else %}
+            {{ article.content }}
+            {% endif %}
+        </main>
+    </article>
+{% endfor %}
+</section>
+<section>
+    <h2>Pages</h2>
+    {% for page in draft_pages|sort(attribute='date', reverse=True) %}
+    <page>
+        <header>
+            <h3><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h3>
+        </header>
+        <main>
+            {% if summarise or page.metadata['summary'] or SUMMARY_MAX_LENGTH %}
+            {{ page.summary }}
+            <br>
+            <a href="{{ SITEURL }}/{{ page.url }}#{{ page.slug }}">Continue reading</a>
+            {% else %}
+            {{ page.content }}
+            {% endif %}
+        </main>
+    </article>
+{% endfor %}
+</section>
+{% endblock %}
