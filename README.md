@@ -5,7 +5,7 @@ Add a browsable drafts listing fr your Pelican website
 
 ## Requirements
 
-Pelican Drafts works with Pelican 4.2+ and Python 3.6+
+Pelican Drafts works with Pelican 4.2+ and Python 3.7+
 
 ## Getting started
 
